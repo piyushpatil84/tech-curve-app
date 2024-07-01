@@ -1,9 +1,17 @@
 import './App.css';
-import './input.css'
+import ResponsiveAppBar from './components/header/header';
+import Sidebar from './components/sidebar/sidebar';
 
 function App() {
   return (
-  <h1 className='bg-black text-white'>Hello</h1>
+    <div className="App">
+      <header>
+        <ResponsiveAppBar />
+      </header>
+      <main>
+        <Sidebar />
+      </main>
+    </div>
   );
 }
 
